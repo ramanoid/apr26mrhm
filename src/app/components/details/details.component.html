@@ -1,3 +1,39 @@
-<p>
-  details works!
-</p>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Fill in for new product registration</h2>
+
+<form (ngSubmit)='AddProduct()' >
+  Product ID:<br>
+  <input type="text" name="firstname" [(ngModel)] = "productItem.productId" >
+  <br>
+  Product Name:<br>
+  <input type="text" name="lastname"[(ngModel)]="productItem.productName" >
+  <br>
+  Product Code:<br>
+  <input type="text" name="pname"[(ngModel)]="productItem.productCode" >
+  <br>
+  Product Description:<br>
+  <input type="text" name="qtname" [(ngModel)]="productItem.description">
+  <br>
+  Product Release:<br>
+  <input type="text" name="fitname" [(ngModel)]="productItem.releaseDate">
+  <br>
+  Product rating:<br>
+  <input type="text" name="irtname" [(ngModel)]="productItem.starRating">
+  <br>
+  Product price:<br>
+  <input type="text" name="firstnae" [(ngModel)]="productItem.price">
+  <br>
+  Product something/image :<br>
+  <input type="text" name="firstname" [(ngModel)]="productItem.imageUrl">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "Mongo db via node".</p>
+
+</body>
+</html>

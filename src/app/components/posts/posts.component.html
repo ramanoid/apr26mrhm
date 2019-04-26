@@ -1,3 +1,12 @@
-<p>
-  posts works!
-</p>
+<h1>Products</h1>
+<ul>
+  <li *ngFor = "let ps of products" >
+    <a routerLink = "/components/details/{{ps.productId}}">{{ps.productName}}</a>
+     
+    <ul>
+      <li>
+        {{ps.productId}}
+      </li><a href="#">{{ps.price}}</a>
+    </ul>
+  </li>
+</ul>
